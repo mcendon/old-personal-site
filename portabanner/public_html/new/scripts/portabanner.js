@@ -30,6 +30,9 @@ $(document).ready(function(){
     });
   });
 
-  $('#fullpage').fullpage();
+  $('#fullpage').fullpage({
+      responsiveWidth:1000,
+      responsiveHeight: 500
+  });
 
 });
