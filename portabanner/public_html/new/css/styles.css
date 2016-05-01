@@ -6,7 +6,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  /*margin-bottom: 60px;*/
+  margin-bottom: 60px;
 }
 
 .page-header {
@@ -51,7 +51,9 @@ body {
 .footer-logo {
   max-width: 100px;
 }
-
+.footer p.lead {
+  font-size: 16px;
+}
 .lead.lead-footer {
   padding: 20px 0 0 5px;
 }
@@ -61,26 +63,3 @@ body {
   color: #FFF;
   margin: 0;
 }
-
-/* SLIDER */
-.fp-tableCell {
-  display:block;
-}
-.fp-controlArrow.fp-prev {
-    border-color: transparent #555 transparent transparent;
-}
-.fp-controlArrow.fp-prev:hover {
-    border-color: transparent #4BBFC3 transparent transparent;
-}
-
-.fp-controlArrow.fp-next {
-    border-color: transparent transparent transparent #555;
-}
-
-.fp-controlArrow.fp-next:hover {
-    border-color: transparent transparent transparent #4BBFC3;
-}
-
-/*div {
-  border: 1px solid #000;
-}*/
