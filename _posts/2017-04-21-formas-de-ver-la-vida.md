@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Formas de ver la vida"
+title:  "Formas de ver la vida que ayudan a vivir mas relajado"
 date:   2017-04-21 14:29:00 -0300
-categories: vida
+categories: vida stress ansiedad
 ---
 **El que alguien me rechace no significa que no valgo como persona**
 
