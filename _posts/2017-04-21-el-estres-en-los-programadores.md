@@ -55,3 +55,7 @@ Recientemente, el ingeniero de software de New Relic, Nick Floyd, ha comenzado a
 Finalmente, el usuario de Reddit citado líneas arriba nos ofrece una conclusión al tema verdaderamente para enmarcar:
 
 > "Realmente deseo que viviéramos en una sociedad donde no nos definíéramos tan fuertemente por nuestros trabajos cotidianos y que donde trabajar hasta la muerte no fuese visto como una virtud."
+
+*Via [BusinessInsider][original-post]*
+
+[original-post]http://www.businessinsider.com/syndromes-drive-coders-crazy-2014-3
