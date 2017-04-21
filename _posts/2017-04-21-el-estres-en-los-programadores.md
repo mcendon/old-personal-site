@@ -58,4 +58,4 @@ Finalmente, el usuario de Reddit citado líneas arriba nos ofrece una conclusió
 
 *Via [BusinessInsider][original-post]*
 
-[original-post]http://www.businessinsider.com/syndromes-drive-coders-crazy-2014-3
+[original-post]: http://www.businessinsider.com/syndromes-drive-coders-crazy-2014-3
