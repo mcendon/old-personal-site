@@ -1,8 +1,9 @@
 ---
+title: Preguntas sin respuesta
+date: 2017-04-21 19:19:00 Z
+categories:
+- vida
 layout: post
-title:  "Preguntas sin respuesta"
-date:   2017-04-21 16:19:00 -0300
-categories: vida
 ---
 
 Ultimamente ando medio a mil.

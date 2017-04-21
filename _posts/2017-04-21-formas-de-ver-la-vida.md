@@ -1,9 +1,11 @@
 ---
+title: Formas de ver la vida que ayudan a vivir mas relajado
+date: 2017-04-21 17:29:00 Z
+categories:
+- vida
 layout: post
-title:  "Formas de ver la vida que ayudan a vivir mas relajado"
-date:   2017-04-21 14:29:00 -0300
-categories: vida
 ---
+
 **El que alguien me rechace no significa que no valgo como persona**
 
 Tiene que ver con lo de dejar de tomarte las cosas de manera personal, muchas personas te rechazarán en la vida por sus propias razones...

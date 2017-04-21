@@ -1,9 +1,11 @@
 ---
+title: El estrés en los programadores está literalmente volviéndolos locos
+date: 2017-04-21 18:39:00 Z
+categories:
+- programacion
 layout: post
-title:  "El estrés en los programadores está literalmente volviéndolos locos"
-date:   2017-04-21 15:39:00 -0300
-categories: programacion
 ---
+
 Ser un programador en la actualidad, debe ser uno de los mejores empleos tanto en el aspecto monetario como en seguridad laboral, pero puede ser increíblemente dañino para la salud mental. Dos cosas están sucediendo que literalmente están volviendo locos a los programadores.
 
 Lo primero es algo conocido como el ´síndrome del impostor´. Esto ocurre cuando estás totalmente convencido de que todos los demás programadores con los que trabajas son más inteligentes, más talentosos y más habilidosos que tú. Vives con el miedo de que la gente descubrirá que tú en realidad eres un completo fraude y que tu inteligencia, tus habilidades o logros son simple apariencia.
