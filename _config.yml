@@ -17,7 +17,7 @@ url: ''
 twitter_username: maucendon
 github_username: mcendon
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: minima
 gems:
 - jekyll-feed
 exclude:
