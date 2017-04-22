@@ -1,6 +1,6 @@
 ---
 title: Mi Blog
-timezone: UTC
+timezone: America/Buenos_Aires
 collections:
   posts:
     title: Posts
