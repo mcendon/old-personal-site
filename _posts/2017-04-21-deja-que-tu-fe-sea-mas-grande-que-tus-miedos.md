@@ -5,6 +5,11 @@ categories:
 - vida
 layout: post
 ---
+
+![El jardin de las delicias - Fuente: Museo del Prado]({{site.url}}/assets/el-jardin-de-las-delicias.jpg)
+*El jardin de las delicias - Fuente: Museo del Prado*
+
+
 Hoy quiero escribir sobre un tema que muchas veces me saca el sueño, y es la pregunta constante de:
 
 **¿Por que estamos acá?**
