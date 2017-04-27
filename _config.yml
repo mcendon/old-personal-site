@@ -10,7 +10,8 @@ collections:
     output: true
 email: mau.cendon@gmail.com
 description: 'Blog de Mauro Cendón'
-disqus.shortname: blog-de-mauro-cendon
+disqus:
+  shortname: 'blog-de-mauro-cendon'
 baseurl: ''
 url: ''
 twitter_username: maucendon
