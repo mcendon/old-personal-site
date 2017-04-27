@@ -6,7 +6,7 @@ categories:
 layout: post
 ---
 
-![El jardin de las delicias - Fuente: Museo del Prado]({{site.url}}/assets/el-jardin-de-las-delicias.jpg)
+![El jardin de las delicias - Fuente: Museo del Prado]({{ site.url }}/assets/el-jardin-de-las-delicias.jpg)
 *El jardin de las delicias - Fuente: Museo del Prado*
 
 
