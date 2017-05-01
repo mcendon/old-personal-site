@@ -1,5 +1,5 @@
 ---
-title: Mi Blog
+title: Blog de Mauro Cendón
 timezone: America/Buenos_Aires
 collections:
   posts:
@@ -9,9 +9,9 @@ collections:
     title: Uploads
     output: true
 email: mau.cendon@gmail.com
-description: 'Blog de Mauro Cendón
-
-'
+description: 'Blog de Mauro Cendón'
+disqus:
+  shortname: 'blog-de-mauro-cendon'
 baseurl: ''
 url: ''
 twitter_username: maucendon
