@@ -10,6 +10,7 @@ layout: post
 
 **Tanatofobia**:
 *nombre femenino*
+
 Temor experimentado hacia la muerte, especialmente a una *muerte inminente*, y que puede constituir una enfermedad.
 
 Me acosté en mi cama, boca abajo. Mi pulso estaba acelerado, mi vientre duro y cerrado de tanto luchar.
