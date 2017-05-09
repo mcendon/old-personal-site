@@ -34,7 +34,7 @@
 			<a class="navbar-brand" href="#" smooth-scroll-jquery target="">
 				<img alt="Brand" class="img-circle" src="assets/images/mauro-thumbnail.jpg">
 			</a>
-			<h5>{{options.developerName}}</h5>
+			<h5 smooth-scroll-jquery target="">{{options.developer.name}}</h5>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
@@ -48,8 +48,8 @@
 	<div id="head" class="parallax-window" data-parallax="scroll">
 		<img class="img-circle" src="assets/images/mauro.jpg" alt="">
 		<h1 id="logo" class="text-center">
-			<span class="title">Mauro Cendón Hidalgo</span>
-			<span class="tagline">Software Developer</span>
+			<span class="title">{{options.developer.name}}</span>
+			<span class="tagline">{{options.developer.title}}</span>
 		</h1>
 	</div>
 </header>
@@ -69,8 +69,9 @@
 							<i class="fa fa-user fa-5x" aria-hidden="true"></i>
 						</div>
 						<div class="col-md-11 col-sm-10 col-xs-12">
-							<p>Técnico en Informática de la E.E.T N° 3 "Roberto Arlt".</p>
-							<p>Licenciado en Análisis de Sistemas en la Facultad de Ingenieria (UBA) [En curso]</p>
+							<p>Edad: {{options.developer.age}} años</p>
+							<p>Titulo secundario: Técnico en Informática de la E.E.T N° 3 "Roberto Arlt".</p>
+							<p>Título universitario: Licenciado en Análisis de Sistemas en la Facultad de Ingenieria (UBA) [En curso]</p>
 							<p>
 							<ul>
 								<li>Poseo expertise en PHP5, Java EE, Linux y lenguaje SQL.</li>

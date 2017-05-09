@@ -2,7 +2,18 @@
 var app = angular.module('mauroCendon', ['ngScrollSpy', 'angularSmoothscroll']);
 
 app.controller('globalController', function($rootScope) {
-  $rootScope.options = {developerName: 'Mauro Cendón Hidalgo'};
+    function _calculateAge(birthday) { // birthday is a date
+      var ageDifMs = Date.now() - birthday.getTime();
+      var ageDate = new Date(ageDifMs); // miliseconds from epoch
+      return Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
+  $rootScope.options = {
+    developer:{
+      name: 'Mauro Cendón Hidalgo',
+      age: _calculateAge(new Date('1991-10-16')),
+      title: 'Software Developer'
+    }
+  };
 })
 .controller('navController', function($scope) {
   $scope.buttons = [{label: "Acerca de mi", identifier: "button_aboutme", target: "aboutme-target"},
