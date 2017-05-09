@@ -2,28 +2,49 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Mauro Cendón Hidalgo - Curriculum Vitae">
-	<meta name="author"      content="Mauro Cendón Hidalgo">
-	<meta name="keywords" content="curriculum,vitae,cv,mauro,cendon,developer,software,dev,php,java,javascript,python,perl,node,linux"/>
+	<meta name="viewport"    	content="width=device-width, initial-scale=1.0">
+	<meta name="description" 	content="Mauro Cendón Hidalgo - Curriculum Vitae">
+	<meta name="author"      	content="Mauro Cendón Hidalgo">
+	<meta name="keywords" 		content="curriculum,vitae,cv,mauro,cendon,desarrollador,web,webmaster,tech,developer,software,dev,php,java,javascript,python,perl,node,linux"/>
 	<meta name="distribution" content="global"/>
-	<meta name="robots" content="all"/>
+	<meta name="robots" 			content="all"/>
 
 	<title>Mauro Cendon Hidalgo</title>
 
 	<!-- Bootstrap -->
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<link href="./assets/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Icons -->
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="./assets/components/font-awesome/css/font-awesome.css" rel="stylesheet">
 	<!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Custom styles -->
 	<link rel="stylesheet" href="assets/css/styles.css">
 
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
-<body class="home">
+<body class="home" ng-app="mauroCendon">
+
+<nav ng-controller="navController" class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#" smooth-scroll-jquery target="">
+				<img alt="Brand" class="img-circle" src="assets/images/mauro-thumbnail.jpg">
+			</a>
+			<h5>Mauro Cendón Hidalgo</h5>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+    		<li ng-repeat="button in buttons" data-scrollspy-listen="{{button.target}}" ng-attr-id="{{button.identifier}}"><a smooth-scroll-jquery target="{{button.target}}">{{button.label}}</a></li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div><!--/.container-fluid -->
+</nav>
 
 <header id="header">
 	<div id="head" class="parallax-window" data-parallax="scroll">
@@ -31,7 +52,6 @@
 		<h1 id="logo" class="text-center">
 			<span class="title">Mauro Cendón Hidalgo</span>
 			<span class="tagline">Software Developer</span>
-			<span class="tagline"><a href="/assets/images/cv."><button type="button" class="btn btn-lg" id="download-pdf">Descargar PDF</button></span></a>
 		</h1>
 	</div>
 </header>
@@ -41,7 +61,7 @@
 		<div class="row section">
 			<div class="col-md-12 .cv-info">
 				<!--EXTRACTO-->
-				<div class="panel panel-default">
+				<div id="aboutme-target" data-scrollspy-broadcast class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">Extracto</h3>
 					</div>
@@ -51,7 +71,7 @@
 							<i class="fa fa-user fa-5x" aria-hidden="true"></i>
 						</div>
 						<div class="col-md-11 col-sm-10 col-xs-12">
-							<p>Técnico en Informática.</p>
+							<p>Técnico en Informática de la E.E.T N° 3 "Roberto Arlt".</p>
 							<p>Licenciado en Análisis de Sistemas en la Facultad de Ingenieria (UBA) [En curso]</p>
 							<p>
 							<ul>
@@ -71,7 +91,7 @@
 
 	<!--div id="skills-separator" class="parallax-window" data-parallax="scroll" data-image-src="assets/images/keyboard-black.jpg"></div-->
 				<!--EXPERIENCIA-->
-				<div class="panel panel-default">
+				<div id="experience-target" data-scrollspy-broadcast data-scrollspy-offset="-300" class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">Experiencia</h3>
 					</div>
@@ -87,23 +107,24 @@
 
 									<div class="panel panel-default">
 										<div class="panel-heading">
-											<h3 class="panel-title">Desarrollador Ssr - OneInfo Consulting</h3>
+											<h3 class="panel-title"><a target="_blank" href="http://www.oneinfoconsulting.com/">OneInfo Consulting</a></h3>
 										</div>
 										<div class="panel-body">
 											<p>
 												<span class="label label-primary">Febrero 2017</span>
+											  <span class="label label-danger">Abril 2017</span>
 												<span class="label label-success">4 meses</span>
 											</p>
-											Desarrollador SSr especializado en Java EE / Oracle OSB / Python / Node.JS
-											<p>Colaboré con evaluaciones de código fuente, diseño de guias de oracle osb y evaluaciones de ingreso para desarrolladores java</p>
-											<p><a href="http://www.oneinfoconsulting.com/">Website de la empresa</a></p>
+											<p>Colaboré con evaluaciones de factibilidad código fuente PHP y Python, diseño de guías paso a paso para capacitacionesen Oracle OSB y evaluaciones de ingreso para desarrolladores JAVA (Evaluaciones Jr, Ssr, y Sr)</p>
+											<p>Me capacité en Node.JS, MongoDB, Express y Loopback</p>
+											<p><a target="_blank" href="http://www.oneinfoconsulting.com/">Website de la empresa</a></p>
 										</div>
 									</div>
 
 
 									<div class="panel panel-default">
 										<div class="panel-heading">
-											<h3 class="panel-title">Java Developer Ssr - AMCO</h3>
+											<h3 class="panel-title"><a target="_blank" href="http://www.amco.space/">AMCO (A Martínez y Co.)</a></h3>
 										</div>
 										<div class="panel-body">
 											<p>
@@ -113,17 +134,17 @@
 											</p>
 											<p>Java Developer, responsable de mantener el software de la suite Coldview (Enterprise Content Manager)</p>
 												<ul>
-												<li>Desarrollo de software AFP y procesamiento de Spools de datos</li>
+												<li>Desarrollos usando librerias AFP (Advanced Function Presentation)</li>
 												<li>Desarrollos de backend (Integraciones / WS / REST)</li>
 												<li>Desarrollos de frontend (UIkit, jQuery, Bootstrap)</li>
 												</ul>
-											<p><a href="http://www.amco.space/">Website de la empresa</a></p>
+												<p><a target="_blank" href="http://www.amco.space/">Website de la empresa</a></p>
 											</div>
 									</div>
 
 									<div class="panel panel-default">
 										<div class="panel-heading">
-											<h3 class="panel-title">PHP Developer Sr - Globant</h3>
+											<h3 class="panel-title"><a href="http://www.globant.com/">Globant</a></h3>
 										</div>
 										<div class="panel-body">
 											<p>
@@ -131,18 +152,18 @@
 												<span class="label label-danger">Agosto 2016</span>
 												<span class="label label-success">7 meses</span>
 											</p>
-											<p>Trabajé para Walt Disney Parks and Resorts, en un estudio responsable de crear y mantener características globales para los sitios web de Disney World, Disneyland, Disneyland París y Hong Kong Disneyland.</p>
+											<p>Trabajé para <strong>Walt Disney Parks and Resorts</strong>, en un estudio responsable de crear y mantener características globales para los sitios web de Disney World, Disneyland, Disneyland París y Hong Kong Disneyland.</p>
 
-											<p>Technologies &amp; Tools
+											<p>Tecnologías &amp; Herramientas
 											PHP5 - Zend Framework - HTML5 - CSS / SASS - Responsive Design - Javascript / jQuery - RESTful Web Services - Continuous integration - Maven - PHPunit - Agile Methodologies - GitHub - Perforce - Jira - Bamboo - Fisheye</p>
-											<p><a href="http://www.globant.com/">Website de la empresa</a></p>
+											<p><a target="_blank" href="http://www.globant.com/">Website de la empresa</a></p>
 											</div>
 
 									</div>
 
 									<div class="panel panel-default">
 										<div class="panel-heading">
-											<h3 class="panel-title">Consultor JIRA - IDS</h3>
+											<h3 class="panel-title"><a target="_blank" href="http://www.ids.net.ar/">Consultor JIRA - IDS</a></h3>
 										</div>
 										<div class="panel-body">
 											<p>
@@ -150,21 +171,21 @@
 												<span class="label label-danger">Febrero 2015</span>
 												<span class="label label-success">4 años y 4 meses</span>
 											</p>
-											<p>Trabajé haciendo consultoría, soporte, mantenimiento, migración y desarrollo de plugins para los productos JIRA® y Confluence® de Atlassian. Algunos proyectos y clientes con los que trabajé: Western Union, Red Link, Nextel, IRSA S.A, ErgoRenova y en el sistema JIRA interno.</p>
+											<p>Trabajé haciendo consultoría, soporte, mantenimiento, migración y desarrollo de plugins para los productos JIRA® y Confluence® de Atlassian. Algunos proyectos y clientes con los que trabajé: <strong>Western Union, Red Link, Nextel, IRSA S.A, ErgoRenova</strong> y en el sistema JIRA de IDS.</p>
 											<ul>
-											<li>Plugin developments in Java (Atlassian SDK)</li>
+											<li>Desarrollos de plugins en Java (Atlassian SDK)</li>
 
 											<li>Scripting (listeners, post functions, etc) in Groovy language</li>
 
 											<li>Analysis and parameterization of JIRA</li>
 											</ul>
-											<p><a href="http://www.ids.net.ar/">Website de la empresa</a></p>
+											<p><a target="_blank" href="http://www.ids.net.ar/">Website de la empresa</a></p>
 											</div>
 									</div>
 
 									<div class="panel panel-default">
 										<div class="panel-heading">
-											<h3 class="panel-title">PHP Developer Sr - IDS</h3>
+											<h3 class="panel-title"><a target="_blank" href="http://www.ids.net.ar/">PHP / Magento Developer - IDS</a></h3>
 										</div>
 										<div class="panel-body">
 											<p>
@@ -172,21 +193,14 @@
 												<span class="label label-danger">Febrero 2015</span>
 												<span class="label label-success">4 años y 4 meses</span>
 											</p>
-											<p>Perfil <strong>Full-Stack</strong></p>
-											<p>Participé activamente y apliqué mis conocimientos de ingeniería en cada etapa del desarrollo de software: análisis de requisitos, diseño, desarrollo, pruebas, implementación, soporte y mantenimiento.</p>
-
 											<p>Desarrollos realizados principalmente en PHP 5, basado en Magento E-Commerce.
 											También hice desarrollos de todo tipo basados en Python, Javascript, Java y otros lenguajes.
 											Trabajé en proyectos de empresas como <strong>Claro, Nextel, Farmacity, Paruolo, Link, La Salada, Sportline</strong> y otras marcas y empresas locales.
 											Hice configuraciones de servidores linux productivos y de staging, desarrollos personalizados en varios lenguajes y tecnologías, apoyando a nuestros clientes y ofreciendo asistencia técnica a desarrolladores.</p>
-											<p><a href="http://www.ids.net.ar/">Website de la empresa</a></p>
+											<p><a target="_blank" href="http://www.ids.net.ar/">Website de la empresa</a></p>
 											</div>
 									</div>
-
-
-
 								</div>
-
 							</div>
 						</div>
 						</div>
@@ -196,7 +210,7 @@
 
 	<!--div id="skills-separator" class="parallax-window" data-parallax="scroll" data-image-src="assets/images/keyboard-white.jpg"></div-->
 				<!--SKILLS-->
-				<div class="panel panel-default">
+				<div ng-controller="skillsController" id="skills-target" data-scrollspy-broadcast data-scrollspy-offset="-300" class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">Skills</h3>
 					</div>
@@ -207,63 +221,15 @@
 						</div>
 						<div class="col-md-11 col-sm-10 col-xs-12">
 							<ul class="list-group">
-							  <h4><span class="label label-default">PHP</span></h4>
-								<h4><span class="label label-default">Zend Framework</span></h4>
-								<h4><span class="label label-default">Magento</span></h4>
-								<h4><span class="label label-default">Java EE</span></h4>
-								<h4><span class="label label-default">Javascript</span></h4>
-								<h4><span class="label label-default">NodeJS</span></h4>
-								<h4><span class="label label-default">jQuery</span></h4>
-								<h4><span class="label label-default">CSS</span></h4>
-								<h4><span class="label label-default">SASS</span></h4>
-								<h4><span class="label label-default">Cloud</span></h4>
-								<h4><span class="label label-default">Doctrine</span></h4>
-								<h4><span class="label label-default">LoopbackJS</span></h4>
-								<h4><span class="label label-default">Python</span></h4>
-								<h4><span class="label label-default">AngularJS</span></h4>
-								<h4><span class="label label-default">ReactJS</span></h4>
-								<h4><span class="label label-default">SOA</span></h4>
-								<h4><span class="label label-default">Web Services</span></h4>
-								<h4><span class="label label-default">XML</span></h4>
-								<h4><span class="label label-default">JSON</span></h4>
-								<h4><span class="label label-default">HTML5</span></h4>
-								<h4><span class="label label-default">SQL</span></h4>
-								<h4><span class="label label-default">MongoDB</span></h4>
-								<h4><span class="label label-default">Redis</span></h4>
-								<h4><span class="label label-default">GIT</span></h4>
-								<h4><span class="label label-default">SVN</span></h4>
-								<h4><span class="label label-default">Yii</span></h4>
-								<h4><span class="label label-default">CakePHP</span></h4>
-								<h4><span class="label label-default">AJAX</span></h4>
-								<h4><span class="label label-default">Smarty</span></h4>
-								<h4><span class="label label-default">Linux</span></h4>
-								<h4><span class="label label-default">Ubuntu</span></h4>
-								<h4><span class="label label-default">Android Studio</span></h4>
-								<h4><span class="label label-default">Ionic</span></h4>
-								<h4><span class="label label-default">Apache Cordova</span></h4>
-								<h4><span class="label label-default">ReactJS</span></h4>
-								<h4><span class="label label-default">AngularJS</span></h4>
-								<h4><span class="label label-default">Responsive Design</span></h4>
-								<h4><span class="label label-default">Networking</span></h4>
-								<h4><span class="label label-default">REST</span></h4>
-								<h4><span class="label label-default">Scrum</span></h4>
-								<h4><span class="label label-default">Unit Testing</span></h4>
-								<h4><span class="label label-default">Design Patterns</span></h4>
-								<h4><span class="label label-default">UML</span></h4>
-								<h4><span class="label label-default">Amazon WS</span></h4>
-								<h4><span class="label label-default">JIRA</span></h4>
-								<h4><span class="label label-default">Confluence</span></h4>
-								<h4><span class="label label-default">Trello</span></h4>
-								<h4><span class="label label-default">Bamboo</span></h4>
-								<h4><span class="label label-default">OOP</span></h4>
-
+							  <h4 ng-repeat="skill in skills"><span class="label label-default">{{skill}}</span></h4>
 						</div>
 						</div>
 					</div>
 				</div>
 				<!--FIN SKILLS-->
+
 				<!--REFERENCIAS-->
-				<div class="panel panel-default">
+				<div id="references-target" data-scrollspy-broadcast data-scrollspy-offset="-300" class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">Que dicen los demás de mi</h3>
 					</div>
@@ -348,8 +314,12 @@
 
 
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="./assets/components/jquery/dist/jquery.min.js"></script>
+<script src="./assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./assets/components/angular/angular.js" charset="utf-8"></script>
+<script src="./assets/components/ng-ScrollSpy.js/src/ng-ScrollSpy.js" charset="utf-8"></script>
+<script src="./assets/components/angular-smoothscroll/dist/scripts/bb15da28.scripts.js" charset="utf-8"></script>
 <script src="assets/js/parallax.min.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>

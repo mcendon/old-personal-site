@@ -1,0 +1,26 @@
+{
+  "name": "mcendon.github.io",
+  "homepage": "http://mcendon.github.io",
+  "authors": [
+    "Mauro Cendón <mau.cendon@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.4",
+    "font-awesome": "fontawesome#^4.7.0",
+    "ng-ScrollSpy.js": "^3.2.2",
+    "angular-smoothscroll": "^1.1.1"
+  }
+}
