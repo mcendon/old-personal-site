@@ -1,15 +1,17 @@
 
 var app = angular.module('mauroCendon', ['ngScrollSpy', 'angularSmoothscroll']);
 
-app.controller('navController', function($scope) {
+app.controller('globalController', function($rootScope) {
+  $rootScope.options = {developerName: 'Mauro Cendón Hidalgo'};
+})
+.controller('navController', function($scope) {
   $scope.buttons = [{label: "Acerca de mi", identifier: "button_aboutme", target: "aboutme-target"},
       {label: "Experiencia", identifier: "button_experience", target: "experience-target"},
       {label: "Skills", identifier: "button_skills", target: "skills-target"},
       {label: "Referencias", identifier: "button_references", target: "references-target"}
     ];;
-});
-
-app.controller('skillsController', function($scope) {
+})
+.controller('skillsController', function($scope) {
   $scope.skills = ['PHP',
     'JSON',
     'HTML5',
