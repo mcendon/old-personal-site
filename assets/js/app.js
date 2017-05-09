@@ -11,16 +11,18 @@ app.controller('navController', function($scope) {
 
 app.controller('skillsController', function($scope) {
   $scope.skills = ['PHP',
+    'JSON',
+    'HTML5',
+    'CSS',
     'Zend Framework',
     'Magento',
-    'Java EE',
+    'Java',
     'Javascript',
     'Android',
     'Windows',
     'NodeJS',
     'jQuery',
     'OOP',
-    'CSS',
     'Cloud Apps',
     'Doctrine ORM',
     'Loopback JS',
@@ -30,8 +32,6 @@ app.controller('skillsController', function($scope) {
     'SOA',
     'Web Services',
     'XML',
-    'JSON',
-    'HTML5',
     'SQL',
     'MongoDB',
     'Redis',
@@ -57,7 +57,11 @@ app.controller('skillsController', function($scope) {
     'JIRA',
     'Confluence',
     'Trello',
-    'Bamboo'
+    'Bamboo',
+    'Maven',
+    'NPM',
+    'Bower',
+    'Composer'
   ];
 
 });
