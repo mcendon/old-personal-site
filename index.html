@@ -1,1 +1,324 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="mauroCendon" ng-controller="globalController">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    	content="width=device-width, initial-scale=1.0">
+	<meta name="description" 	content="Mauro Cendón Hidalgo - Curriculum Vitae">
+	<meta name="author"      	content="Mauro Cendón Hidalgo">
+	<meta name="keywords" 		content="curriculum,vitae,cv,mauro,cendon,desarrollador,web,webmaster,tech,developer,software,dev,php,java,javascript,python,perl,node,linux"/>
+	<meta name="distribution" content="global"/>
+	<meta name="robots" 			content="all"/>
+	<title>Software Developer en Argentina - Mauro Cendón Hidalgo</title>
+	<!-- Bootstrap -->
+	<link href="./assets/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Icons -->
+	<link href="./assets/components/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
 
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+<body class="home">
+
+<nav ng-controller="navController" class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#" smooth-scroll-jquery target="">
+				<img alt="Brand" class="img-circle" src="assets/images/mauro-thumbnail.jpg">
+			</a>
+			<h5 smooth-scroll-jquery target="">{{options.developer.name}}</h5>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+    		<li ng-repeat="button in buttons" data-scrollspy-listen="{{button.target}}" ng-attr-id="{{button.identifier}}"><a smooth-scroll-jquery target="{{button.target}}">{{button.label}}</a></li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div><!--/.container-fluid -->
+</nav>
+
+<header id="header">
+	<div id="head" class="parallax-window" data-parallax="scroll">
+		<img class="img-circle" src="assets/images/mauro.jpg" alt="">
+		<h1 id="logo" class="text-center">
+			<span class="title">{{options.developer.name}}</span>
+			<span class="tagline">{{options.developer.title}}</span>
+		</h1>
+	</div>
+</header>
+
+<main id="main">
+	<div class="container">
+		<div class="row section">
+			<div class="col-md-12 .cv-info">
+				<!--EXTRACTO-->
+				<div id="aboutme-target" data-scrollspy-broadcast class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Extracto</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+						<div class="col-md-1 col-sm-2 hidden-xs">
+							<i class="fa fa-user fa-5x" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-11 col-sm-10 col-xs-12">
+							<p>Edad: {{options.developer.age}} años</p>
+							<p>Titulo secundario: Técnico en Informática de la E.E.T N° 3 "Roberto Arlt".</p>
+							<p>Título universitario: Licenciado en Análisis de Sistemas en la Facultad de Ingenieria (UBA) [En curso]</p>
+							<p>
+							<ul>
+								<li>Poseo expertise en PHP5, Java EE, Linux y lenguaje SQL.</li>
+								<li>5 años de experiencia en desarrollo de software</li>
+								<li>Tengo una excelente capacidad de aprendizaje, siempre atento a nuevas tecnologías y métodos que pueda aprender y aplicar</li>
+								<li>Me oriento a generar aplicaciones rentables, productivas y de calidad</li>
+								<li>Me gusta trabajar en equipo y contribuir en el crecimiento del mismo</li>
+							</ul>
+							</p>
+							<p>Uno de mis objetivos es convertirme en un referente en Argentina y el mundo tanto para profesionales de IT como para emprendedores y profesionales de otras áreas.</p>
+						</div>
+						</div>
+					</div>
+				</div>
+				<!--FIN EXTRACTO-->
+
+	<!--div id="skills-separator" class="parallax-window" data-parallax="scroll" data-image-src="assets/images/keyboard-black.jpg"></div-->
+				<!--EXPERIENCIA-->
+				<div id="experience-target" data-scrollspy-broadcast data-scrollspy-offset="-300" class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Experiencia</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+						<div class="col-md-1 col-sm-2 hidden-xs">
+							<i class="fa fa-briefcase fa-4x" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-11 col-sm-10 col-xs-12">
+							<div class="row">
+								<div class="col-md-12">
+
+
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h3 class="panel-title"><a target="_blank" href="http://www.oneinfoconsulting.com/">OneInfo Consulting</a></h3>
+										</div>
+										<div class="panel-body">
+											<p>
+												<span class="label label-primary">Febrero 2017</span>
+											  <span class="label label-danger">Abril 2017</span>
+												<span class="label label-success">4 meses</span>
+											</p>
+											<p>Colaboré con evaluaciones de factibilidad código fuente PHP y Python, diseño de guías paso a paso para capacitacionesen Oracle OSB y evaluaciones de ingreso para desarrolladores JAVA (Evaluaciones Jr, Ssr, y Sr)</p>
+											<p>Me capacité en Node.JS, MongoDB, Express y Loopback</p>
+											<p><a target="_blank" href="http://www.oneinfoconsulting.com/">Website de la empresa</a></p>
+										</div>
+									</div>
+
+
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h3 class="panel-title"><a target="_blank" href="http://www.amco.space/">AMCO (A Martínez y Co.)</a></h3>
+										</div>
+										<div class="panel-body">
+											<p>
+												<span class="label label-primary">Agosto 2015</span>
+												<span class="label label-danger">Diciembre 2016</span>
+												<span class="label label-success">1 año y 5 meses</span>
+											</p>
+											<p>Java Developer, responsable de mantener el software de la suite Coldview (Enterprise Content Manager)</p>
+												<ul>
+												<li>Desarrollos usando librerias AFP (Advanced Function Presentation)</li>
+												<li>Desarrollos de backend (Integraciones / WS / REST)</li>
+												<li>Desarrollos de frontend (UIkit, jQuery, Bootstrap)</li>
+												</ul>
+												<p><a target="_blank" href="http://www.amco.space/">Website de la empresa</a></p>
+											</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h3 class="panel-title"><a href="http://www.globant.com/">Globant</a></h3>
+										</div>
+										<div class="panel-body">
+											<p>
+												<span class="label label-primary">Febrero 2015</span>
+												<span class="label label-danger">Agosto 2016</span>
+												<span class="label label-success">7 meses</span>
+											</p>
+											<p>Trabajé para <strong>Walt Disney Parks and Resorts</strong>, en un estudio responsable de crear y mantener características globales para los sitios web de Disney World, Disneyland, Disneyland París y Hong Kong Disneyland.</p>
+
+											<p>Tecnologías &amp; Herramientas
+											PHP5 - Zend Framework - HTML5 - CSS / SASS - Responsive Design - Javascript / jQuery - RESTful Web Services - Continuous integration - Maven - PHPunit - Agile Methodologies - GitHub - Perforce - Jira - Bamboo - Fisheye</p>
+											<p><a target="_blank" href="http://www.globant.com/">Website de la empresa</a></p>
+											</div>
+
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h3 class="panel-title"><a target="_blank" href="http://www.ids.net.ar/">Consultor JIRA - IDS</a></h3>
+										</div>
+										<div class="panel-body">
+											<p>
+												<span class="label label-primary">Noviembre 2010</span>
+												<span class="label label-danger">Febrero 2015</span>
+												<span class="label label-success">4 años y 4 meses</span>
+											</p>
+											<p>Trabajé haciendo consultoría, soporte, mantenimiento, migración y desarrollo de plugins para los productos JIRA® y Confluence® de Atlassian. Algunos proyectos y clientes con los que trabajé: <strong>Western Union, Red Link, Nextel, IRSA S.A, ErgoRenova</strong> y en el sistema JIRA de IDS.</p>
+											<ul>
+											<li>Desarrollos de plugins en Java (Atlassian SDK)</li>
+
+											<li>Scripting (listeners, post functions, etc) in Groovy language</li>
+
+											<li>Analysis and parameterization of JIRA</li>
+											</ul>
+											<p><a target="_blank" href="http://www.ids.net.ar/">Website de la empresa</a></p>
+											</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h3 class="panel-title"><a target="_blank" href="http://www.ids.net.ar/">PHP / Magento Developer - IDS</a></h3>
+										</div>
+										<div class="panel-body">
+											<p>
+												<span class="label label-primary">Noviembre 2010</span>
+												<span class="label label-danger">Febrero 2015</span>
+												<span class="label label-success">4 años y 4 meses</span>
+											</p>
+											<p>Desarrollos realizados principalmente en PHP 5, basado en Magento E-Commerce.
+											También hice desarrollos de todo tipo basados en Python, Javascript, Java y otros lenguajes.
+											Trabajé en proyectos de empresas como <strong>Claro, Nextel, Farmacity, Paruolo, Link, La Salada, Sportline</strong> y otras marcas y empresas locales.
+											Hice configuraciones de servidores linux productivos y de staging, desarrollos personalizados en varios lenguajes y tecnologías, apoyando a nuestros clientes y ofreciendo asistencia técnica a desarrolladores.</p>
+											<p><a target="_blank" href="http://www.ids.net.ar/">Website de la empresa</a></p>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+				<!--FIN EXPERIENCIA-->
+
+	<!--div id="skills-separator" class="parallax-window" data-parallax="scroll" data-image-src="assets/images/keyboard-white.jpg"></div-->
+				<!--SKILLS-->
+				<div ng-controller="skillsController" id="skills-target" data-scrollspy-broadcast data-scrollspy-offset="-300" class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Skills</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+						<div class="col-md-1 col-sm-2 hidden-xs">
+							<i class="fa fa-rocket fa-5x" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-11 col-sm-10 col-xs-12">
+							<ul class="list-group">
+							  <h4 ng-repeat="skill in skills"><span class="label label-default">{{skill}}</span></h4>
+						</div>
+						</div>
+					</div>
+				</div>
+				<!--FIN SKILLS-->
+
+				<!--REFERENCIAS-->
+				<div id="references-target" data-scrollspy-broadcast data-scrollspy-offset="-300" class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Que dicen los demás de mi</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+						<div class="col-md-1 col-sm-2 hidden-xs">
+							<i class="fa fa-thumbs-up fa-5x" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-11 col-sm-10 col-xs-12">
+							<blockquote>
+							  <p><i>"He tenido la suerte de trabajar ya hace dos años junto a Mauro, tiene un excelente desenvolvimiento como programador y analista. Soluciona problemas o requerimientos de manera muy eficiente. Por su gran conocimiento del código lo recomiendo."</i></p>
+							  <footer>Laureano Gatto <cite title="Source Title"> - Lead QC Analyst en <a href="http://www.globant.com">Globant</a></cite></footer>
+							</blockquote>
+							<blockquote>
+								<p><i>"Mauro es un desarrollador muy hábil, con muchísimo conocimiento y con una gran proyección. Siempre está atento a nuevas técnicas que pueda sumar a sus capacidades."</i></p>
+								<footer>Matias Interlandi <cite title="Source Title"> - Responsable de Diseño en <a href="http://www.ids.net.ar">IDS</a></cite></footer>
+							</blockquote>
+							<blockquote>
+								<p><i>"Mauro fue un gran compañero de trabajo, muy proactivo y responsable en sus tareas, con una gran capacidad de trabajo en equipo."</i></p>
+								<footer>Lucio Marquez <cite title="Source Title"> - Director en <a href="http://www.estudioloop.com">Estudio Loop</a></cite></footer>
+							</blockquote>
+							<blockquote>
+								<p><i>"Mauro es un gran profesional en todo sentido. Mas alla de su corta edad, cuenta con las herramientas necesarias para que su participación en todo proyecto sea de vital importancia a la hora de plantear soluciones y brindar alternativas. Destaco tanto su personalidad como su profesionalismo a la hora de encarar proyectos. Recomiendo a Mauro sin dudarlo."</i></p>
+								<footer>Mario Valiente <cite title="Source Title"> - Lider de desarrollo Front-end en <a href="http://en.avatarla.com/">Avatar</a></cite></footer>
+							</blockquote>
+						</div>
+						</div>
+					</div>
+				</div>
+				<!--FIN REFERENCIAS-->
+			</div>
+		</div> <!-- / section -->
+	</div>
+</main>
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 widget">
+				<h3 class="widget-title">Contáctame</h3>
+				<div class="widget-body">
+					<span>Puedes contactarme en la siguiente dirección de email:</span><br />
+						<a href="mailto:#">mau.cendon at gmail dot com</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-5 widget">
+				<h3 class="widget-title">Sígueme en</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href="https://ar.linkedin.com/pub/mauro-cend%C3%B3n/43/623/199" target="_blank"><i class="fa fa-linkedin fa-2"></i></a>
+						<a href="http://www.twitter.com/maucendon" target="_blank"><i class="fa fa-twitter fa-2"></i></a>
+						<a href="http://www.github.com/mcendon" target="_blank"><i class="fa fa-github fa-2"></i></a>
+						<a href="http://www.facebook.com/cendon" target="_blank"><i class="fa fa-facebook fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p>Made with &#10084; in Buenos Aires City</p>
+				</div>
+			</div>
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; 2017, Mauro Cendón Hidalgo<br>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="./assets/components/jquery/dist/jquery.min.js"></script>
+<script src="./assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./assets/components/angular/angular.js" charset="utf-8"></script>
+<script src="./assets/components/ng-ScrollSpy.js/src/ng-ScrollSpy.js" charset="utf-8"></script>
+<script src="./assets/components/angular-smoothscroll/dist/scripts/bb15da28.scripts.js" charset="utf-8"></script>
+<script src="assets/js/parallax.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
